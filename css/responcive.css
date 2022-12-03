@@ -1,14 +1,12 @@
 
-<!--Responsive CSS-->
-
 /* Media Query 1170px */
 @media (max-width:1170px) {
 
     /* General CSS */
     .section-subtitle {
         max-width: 60%;
-    
-    
+    }
+
     /* 01 Navbar CSS */
     .header .navbar {
         background-size: cover;
@@ -32,7 +30,7 @@
     .banner_section .carousel-item {
         height: 90vh;
     }
-
+}
 
 /* Media Query 991px */
 @media (max-width:991px) {
@@ -99,3 +97,5 @@
         font-size: 7px;
     }
 }
+
+      

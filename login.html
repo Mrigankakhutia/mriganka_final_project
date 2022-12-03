@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Website Design By Mriganka.</title>
+    <title>Login & signup</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap 5 CDN -->
@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responcive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+    <link rel="stylesheet" href="/css/style2.css">
 </head>
 
-<body>
-    <!-- Navbar Section Start -->
+<body class="about">
+    <!-- Navbar Section -->
     <header id="full_nav">
         <div class="header">
             <div class="container">
@@ -36,12 +37,12 @@
 
                     <div class="collapse navbar-collapse" id="main-nav">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="/index.html">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/about.html">About</a>
+                                <a class="nav-link " href="/about.html">About</a>
                             </li>
 
                             <li class="nav-item">
@@ -55,10 +56,9 @@
                                 <a class="nav-link" href="/contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="/login.html">LOGIN/SIGNUP</a>
+                                <a class="nav-link active" href="#">LOGIN/SIGNUP</a>
                             </li>
                         </ul>
-                        
 
                         <div class="header_right">
                             <div class="text-lg-end">
@@ -71,25 +71,40 @@
             </div>
         </div>
     </header>
-    <!-- Navbar Section Exit -->
-    
+    <!-- Navbar Section end -->
+   
     <!-- banner Section start -->
     <section class="banner_section">
         <div class="container">
             <div class="banner-content">
+                <h1></h1>
             </div>
         </div>
     </section>
     <!-- banner section exit -->
 
+    <!--About Section start -->
+    <div class="login-box">
+        <h1>Login</h1>
+        <form>
+          <label>Email</label>
+          <input type="email" placeholder="" />
+          <label>Password</label>
+          <input type="password" placeholder="" />
+          <input type="button" value="Submit" />
+        <closeform></closeform></form>
+        <br>
+        <p class="para-2">
+            Not have an account? <a href="/404.html">Sign Up Here</a>
+          </p>
+        
+      </div>
+      <br>
 
-    <!-- login start -->
-  
-
-    <!-- login end -->
-
-     <!-- Footer section Start-->
-     <section class="footer_wrapper mt-3 mt-md-0">
+    <!--About Section Exit -->
+<br>
+    <!-- Footer section -->
+    <section class="footer_wrapper mt-3 mt-md-0">
         <div class="container px-5 px-lg-0">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
@@ -147,17 +162,11 @@
     </section>
     <!-- Footer Section Exit  -->
 
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Lightbox Pupup -->
-
     <!-- Bootstrap 5 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>

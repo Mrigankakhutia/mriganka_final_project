@@ -7,7 +7,7 @@
     /* General CSS */
     .section-subtitle {
         max-width: 60%;
-    }
+    
     
     /* 01 Navbar CSS */
     .header .navbar {
@@ -32,7 +32,7 @@
     .banner_section .carousel-item {
         height: 90vh;
     }
-}
+
 
 /* Media Query 991px */
 @media (max-width:991px) {

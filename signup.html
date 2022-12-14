@@ -89,17 +89,16 @@
         <h4>It's free and only takes a minute</h4>
         <form>
           <label>First Name</label>
-          <input type="text" placeholder="" />
+          <input type="text" placeholder=" Enter your First Name...." />
           <label>Last Name</label>
-          <input type="text" placeholder="" />
+          <input type="text" placeholder="Enter Your Last Name...." />
           <label>Email</label>
-          <input type="email" placeholder="" />
+          <input type="email" id="user_name" for="user_name" placeholder="Enter Your email Here...." />
           <label>Password</label>
-          <input type="password" placeholder="" />
-          <label>Confirm Password</label>
-          <input type="password" placeholder="" />
-          <input type="button" value="Submit" />
-        <closeform></closeform></form>
+          <input type="password" id="user_pass" for="user_pass" placeholder="Make Your Password...." />
+          <input  type="button" onclick="signUp()" value="Submit" />
+
+        </form>
         <p>
           By clicking the Sign Up button,you agree to our <br />
           <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
@@ -172,5 +171,19 @@
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script>
+        function signUp(){
+
+        const userData = {
+       
+            email:document.getElementById('user_name').value,
+            user_pass:document.getElementById('user_pass').value,
+            
+        };
+        window.location.href = "login.html";
+        localStorage.setItem("user_data", JSON.stringify(userData));
+        
+        }
+    </script>
 </body>
 </html>

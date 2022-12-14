@@ -88,14 +88,14 @@
         <h1>Login</h1>
         <form>
           <label>Email</label>
-          <input type="email" placeholder="" />
+          <input type="email" id="user_name" placeholder="Type Your Email Here.... " />
           <label>Password</label>
-          <input type="password" placeholder="" />
-          <input type="button" value="Submit" />
+          <input type="password" id="user_pass" placeholder="Enter Your Password...." />
+          <input type="button" onclick="signIn()" value="Submit" />
         <closeform></closeform></form>
         <br>
         <p class="para-2">
-            Not have an account? <a href="/404.html">Sign Up Here</a>
+            Not have an account? <a href="/signup.html">Sign Up Here</a>
           </p>
         
       </div>
@@ -165,5 +165,32 @@
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script >
+
+        function getData(){
+            let user_data =   JSON.parse(localStorage.getItem("user_data"));
+            return user_data;
+        }
+        //  var data = getData();
+        //  console.log(data);
+      
+      function signIn(){
+      
+           let data = getData();
+      
+           let user_name = document.getElementById('user_name').value;
+           let user_pass = document.getElementById('user_pass').value;
+           
+         
+            if (data.email == user_name && data.user_pass == user_pass)
+            {
+            window.location.href = "/index.html";
+                alert("login success");
+               
+           } else {
+             alert("login fail");
+           }
+         }
+          </script>
 </body>
 </html>
